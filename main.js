@@ -4,17 +4,13 @@ function geeting(){
   btn.addEventListener('click',(e)=>{
     e.preventDefault();
     console.log(input.value)
-          result = input.value
-
+    result = input.value
     fetchingshits()
   })
 }
-  geeting()
+geeting();
   function fetchingshits(){
-let url = `http://www.omdbapi.com/?t=${result}&r=10&apikey=2bfb6f8f`
-fetch(url)
-  .then((res) => res.json())
-  .then((data) => {
-    
-  })
+fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${result}&appid=7038ca96d945aa7c9f80f532ded3e38b`)
+.then(res => res.json())
+.then(data => console.log(data))
   }
