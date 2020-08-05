@@ -11,7 +11,6 @@ function defaultFetch(){
       placeholder.setAttribute('class','card')
     placeholder.innerHTML = `
     <img class='res-img' loading='lazy' src='${result.urls.thumb}.jpg'>
-    <div class='likes'>${result.likes}❤️</div>
     <div class='dl-btn'>Download</div>
     <div class='from'><img class='profilepic' src='${result.user.profile_image.medium}.jpg' ><a href='${result.user.links.html}'>${result.user.name}</a></div>
     <div class='tags'>

@@ -10,8 +10,7 @@
 }
 .card{
     width: 80%;
-    margin:40px 10px;
-    background:#836685;
+    margin:40px 0px;
     display:flex;
     text-align: center;
     flex-direction:column;
@@ -19,30 +18,39 @@
     position: relative;
 }
 .card .res-img{
-    height: 80%;
-    width: 60%;
+    height: 100%;
+}
+.from a{
+    text-decoration:none;
+    color: black;
+    position: absolute;
+    top: 0px;
+    left: 55px;
 }
 .from{
     position: absolute;
     top: -30px;
     left: 10px;
-    text-align: center;
+    width: 100%;
 }
 .profilepic{
     border-radius:50%;
     height: 30px;
     width: 30px;
+    position: absolute;
+    left: 10px;
+    top: -5px;
 }
 .tags{
     display: inline;
     position: absolute;
-    left: 10px;
-    bottom: 10px;
+    left: 30px;
+    bottom: -25px;
 }
 .dl-btn{
     position: absolute;
     right: 20px;
-    bottom: 10px;
+    bottom: -25px;
 }
 .tag{
     font-size: 15px;
